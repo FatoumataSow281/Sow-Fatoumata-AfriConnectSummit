@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Intervenants - AfriConnect Summit 2026</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header id="navbar">
+    <nav>
+      <a href="index.html" class="logo">AfriConnect Summit 2026</a>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="programme.html">Programme</a></li>
+        <li><a href="intervenants.html">Intervenants</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <button id="theme-toggle" aria-label="Basculer entre le mode sombre et le mode clair">
+        <i class="bi bi-moon-stars"></i>
+      </button>
+
+      <button id="hamburger" aria-label="Ouvrir le menu de navigation">
+        <i class="bi bi-list"></i>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+      <h1>Intervenants</h1>
+      <nav aria-label="Fil d'Ariane">
+        <a href="index.html">Accueil</a> &gt; <span>Intervenants</span>
+      </nav>
+    </section>
+
+    <section class="speakers-filter">
+      <h2 class="sr-only">Liste des intervenants</h2>
+
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">Tous</button>
+        <button class="filter-btn" data-filter="ia-tech">IA & Tech</button>
+        <button class="filter-btn" data-filter="business">Business</button>
+        <button class="filter-btn" data-filter="design">Design</button>
+        <button class="filter-btn" data-filter="data">Data</button>
+      </div>
+
+    </section>
+
+    <div class="speakers-grid-full">
+  <article class="speaker-card" data-category="ia-tech">
+    <img src="images/images.jpg" alt="Portrait de Aïssatou Diallo, Directrice Technique">
+    <h3>Aïssatou Diallo</h3>
+    <p class="speaker-title">Directrice Technique, TechAfrica</p>
+    <p class="speaker-country">Sénégal</p>
+  </article>
+
+  <article class="speaker-card" data-category="business">
+    <img src="images/portrait-professionnel-quelles-sont-les-regles.jpg" alt="Portrait de Kwame Mensah, Fondateur de startup">
+    <h3>Kwame Mensah</h3>
+    <p class="speaker-title">Fondateur, PayGhana</p>
+    <p class="speaker-country">Ghana</p>
+  </article>
+
+  <article class="speaker-card" data-category="business">
+    <img src="images/portrait-corporate-femme.webp" alt="Portrait de Fatima Bensaid, Investisseuse">
+    <h3>Fatima Bensaid</h3>
+    <p class="speaker-title">Investisseuse, Atlas Ventures</p>
+    <p class="speaker-country">Maroc</p>
+  </article>
+
+  <article class="speaker-card" data-category="design">
+    <img src="images/Portrait-corporate-Professionnel-2.jpg" alt="Portrait de Jean-Baptiste Koffi, Designer produit">
+    <h3>Jean-Baptiste Koffi</h3>
+    <p class="speaker-title">Designer Produit, Ivoire Digital</p>
+    <p class="speaker-country">Côte d'Ivoire</p>
+  </article>
+
+  <article class="speaker-card" data-category="data">
+    <img src="images/portrait-technicien-souriant-dans-systeme-surveillance-performances-du-centre-donnees_482257-125692.avif" alt="Portrait de Nadia Traoré, Data Scientist">
+    <h3>Nadia Traoré</h3>
+    <p class="speaker-title">Data Scientist, DataBenin</p>
+    <p class="speaker-country">Bénin</p>
+  </article>
+
+  <article class="speaker-card" data-category="ia-tech">
+    <img src="images/portrait-professionnel-chef-equipe-assurant-1.webp" alt="Portrait de Samuel Osei, Ingénieur IA">
+    <h3>Samuel Osei</h3>
+    <p class="speaker-title">Ingénieur IA, AfriLabs</p>
+    <p class="speaker-country">Ghana</p>
+  </article>
+
+  <article class="speaker-card" data-category="design">
+    <img src="images/portrait-femme-africaine-serieuse-manteau-floral_23-2148747915.avif" alt="Portrait de Awa Ndiaye, UX Designer">
+    <h3>Awa Ndiaye</h3>
+    <p class="speaker-title">UX Designer, CreativDak</p>
+    <p class="speaker-country">Sénégal</p>
+  </article>
+
+  <article class="speaker-card" data-category="data">
+    <img src="images/homme-africain-dans-costume-noir_1157-45553.avif" alt="Portrait de Moussa Camara, Analyste de données">
+    <h3>Moussa Camara</h3>
+    <p class="speaker-title">Analyste de données, GuinéeStat</p>
+    <p class="speaker-country">Guinée</p>
+  </article>
+
+  <article class="speaker-card" data-category="business">
+    <img src="images/photographe_professionnel_portrait_corporate.jpg" alt="Portrait de Chidi Okafor, Entrepreneur">
+    <h3>Chidi Okafor</h3>
+    <p class="speaker-title">CEO, LagosFin</p>
+    <p class="speaker-country">Nigéria</p>
+  </article>
+</div>
+
+  </main>
+
+  <footer>
+  <div class="footer-columns">
+
+    <div class="footer-col">
+      <h3>AfriConnect Summit</h3>
+      <p>La rencontre annuelle des développeurs, entrepreneurs et investisseurs d'Afrique.</p>
+    </div>
+
+    <div class="footer-col">
+      <h3>Navigation</h3>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="programme.html">Programme</a></li>
+        <li><a href="intervenants.html">Intervenants</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3>Suivez-nous</h3>
+      <div class="social-icons">
+        <a href="#" aria-label="Suivre AfriConnect Summit sur Facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" aria-label="Suivre AfriConnect Summit sur Twitter"><i class="bi bi-twitter-x"></i></a>
+        <a href="#" aria-label="Suivre AfriConnect Summit sur LinkedIn"><i class="bi bi-linkedin"></i></a>
+        <a href="#" aria-label="Suivre AfriConnect Summit sur Instagram"><i class="bi bi-instagram"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; <span id="year"></span> AfriConnect Summit. Tous droits réservés.</p>
+  </div>
+
+  <button id="back-to-top" aria-label="Retourner en haut de la page">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+</footer>
+
+</body>
+</html>
