@@ -749,3 +749,219 @@ tbody tr:hover {
 .speaker-card.hidden {
   display: none;
 }
+
+/* ===== CONTACT SECTION ===== */
+.contact-section {
+  padding: var(--spacing-xl) var(--spacing-lg);
+}
+
+.contact-wrapper {
+  display: flex;
+  gap: var(--spacing-xl);
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.contact-form-col {
+  flex: 1 1 500px;
+}
+
+.contact-info-col {
+  flex: 1 1 300px;
+}
+
+.contact-form-col h2,
+.contact-info-col h2 {
+  margin-bottom: var(--spacing-lg);
+  font-size: 1.6rem;
+}
+
+/* Champs du formulaire */
+.form-group {
+  margin-bottom: var(--spacing-lg);
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: var(--spacing-sm);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 0.7rem var(--spacing-md);
+  border: 2px solid rgba(0, 0, 0, 0.15);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  background: var(--color-light-bg);
+  color: var(--color-light-text);
+  transition: border-color var(--transition-speed);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+/* ===== VALIDATION DU FORMULAIRE ===== */
+.form-group input.error,
+.form-group select.error,
+.form-group textarea.error {
+  border-color: #e63946;
+}
+
+.form-group input.valid,
+.form-group select.valid,
+.form-group textarea.valid {
+  border-color: #2a9d8f;
+}
+
+.error-message {
+  display: block;
+  min-height: 1.1rem;
+  margin-top: 0.3rem;
+  font-size: 0.8rem;
+  color: #e63946;
+}
+
+.success-message {
+  display: none;
+  margin-top: var(--spacing-lg);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-sm);
+  background: rgba(42, 157, 143, 0.15);
+  color: #2a9d8f;
+  font-weight: 600;
+  text-align: center;
+}
+
+.success-message.visible {
+  display: block;
+}
+
+.btn-primary[type="submit"] {
+  width: 100%;
+  margin-top: var(--spacing-sm);
+  border: none;
+  cursor: pointer;
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.btn-primary[type="submit"]:hover {
+  background: var(--color-secondary);
+}
+
+/* ===== CONTACT INFO ===== */
+.info-list {
+  list-style: none;
+}
+
+.info-list li {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+  font-size: 0.95rem;
+}
+
+.info-list i {
+  font-size: 1.3rem;
+  color: var(--color-primary);
+  flex-shrink: 0;
+}
+
+/* ===== FAQ ACCORDION (CSS PUR) ===== */
+.faq {
+  padding: var(--spacing-xl) var(--spacing-lg);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq h2 {
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+  font-size: 2rem;
+}
+
+.accordion-item {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.accordion-toggle {
+  display: none;
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-md) 0;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color var(--transition-speed);
+}
+
+.accordion-header:hover {
+  color: var(--color-primary);
+}
+
+.accordion-header i {
+  transition: transform var(--transition-speed);
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height var(--transition-speed) ease;
+}
+
+.accordion-content p {
+  padding-bottom: var(--spacing-md);
+  font-size: 0.9rem;
+  opacity: 0.8;
+  line-height: 1.6;
+}
+
+/* Le mécanisme clé : quand la checkbox cachée est cochée... */
+.accordion-toggle:checked ~ .accordion-content {
+  max-height: 300px;
+}
+
+.accordion-toggle:checked ~ .accordion-header i {
+  transform: rotate(180deg);
+}
+
+.accordion-toggle:checked ~ .accordion-header {
+  color: var(--color-primary);
+}
+
+/* ===== MAP SECTION ===== */
+.map-section {
+  padding: 0 var(--spacing-lg) var(--spacing-xl);
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.map-section h2 {
+  margin-bottom: var(--spacing-lg);
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.map-section iframe {
+  width: 100%;
+  border: 0;
+  border-radius: var(--radius-md);
+}
